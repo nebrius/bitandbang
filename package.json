@@ -1,26 +1,23 @@
 {
-  "name": "bitandbang",
+  "name": "nebrius",
   "version": "1.1.0",
-  "description": "A personal card for Tierney Cyren (@bitandbang)",
+  "description": "A personal card for Bryan Hughes (@nebrius)",
   "main": "index.js",
   "bin": {
-    "bitandbang": "./bin/card.js"
+    "nebrius": "./bin/card.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bnb/bitandbang.git"
+    "url": "https://github.com/nebrius/bitandbang.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
+  "author": "Bryan Hughes <bryan@nebri.us>",
   "license": "MIT",
   "dependencies": {
     "boxen": "^2.1.0",
     "chalk": "^2.4.1"
-  },
-  "devDependencies": {
-    "standard": "^12.0.1"
   }
 }
