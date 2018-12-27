@@ -14,7 +14,8 @@ const options = {
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('Bryan Hughes /'),
+  name: chalk.white('Bryan Hughes, Ph.D. /'),
+  pronouns: chalk.green(' http://pronoun.is/he'),
   handle: chalk.cyan('nebrius'),
   work: chalk.white('Senior Cloud Developer Advocate at Microsoft'),
   twitter: chalk.cyan('https://twitter.com/nebrius'),
@@ -35,6 +36,7 @@ const data = {
 // Actual strings we're going to output
 const newline = '\n'
 const heading = `${data.name} ${data.handle}`
+const subheading = `${data.pronouns}`
 const working = `${data.labelWork}  ${data.work}`
 const twittering = `${data.labelTwitter}  ${data.twitter}`
 const githubing = `${data.labelGitHub}  ${data.github}`
@@ -44,6 +46,6 @@ const emailing = `${data.labelEmail}  ${data.email}`
 const carding = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen effectively
-const output = heading + newline + newline + working + newline + twittering + newline + githubing + newline + linkedining + newline + webing + newline + emailing + newline + newline + carding
+const output = heading + newline + subheading + newline + newline + working + newline + twittering + newline + githubing + newline + linkedining + newline + webing + newline + emailing + newline + newline + carding
 
 console.log(chalk.green(boxen(output, options)))
